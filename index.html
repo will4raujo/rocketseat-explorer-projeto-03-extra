@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Mentoria Avançado</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Avalie sua Mentoria</h1>
+            <p>Chegou a hora de avaliar seu mentor. Bora lá?</p>
+            <img src="images/img1.svg" alt="balão de avaliação">
+        </header>
+        <form action="" method="get" id="mentorship-form">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações pessoais</legend>
+                    <div class="col-2">
+                        <div class="input-wrapper">
+                            <label for="mentorship-name">Nome</label>
+                            <input type="text" name="mentorship-name" id="mentorship-name" required />
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentorship-lastname">Sobrenome</label>
+                            <input type="text" name="mentorship-lastname" id="mentorship-lastname" required />
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentorship-email">Email <span>(digite um email válido)</span></label>
+                        <input type="email" name="mentorship-email" id="mentorship-email" required />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Informações do mentor</legend>
+                    <div class="input-wrapper">
+                        <label for="mentorship-select">Selecione quem foi seu mentor</label>
+                        <select name="mentorship-select" id="mentorship-select">
+                            <option value="1">Mentor 1</option>
+                            <option value="2">Mentor 2</option>
+                            <option value="3">Mentor 3</option>
+                        </select>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentorship-feedback">Feedback sobre o mentor</label>
+                        <textarea name="mentorship-feedback" id="mentorship-feedback"></textarea>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="mentorship-checkbox"/>
+                        <label for="mentorship-checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>Agendando a próxima mentoria</legend>
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="mentorship-date">Data <span>(DD/MM/AAAA)</span></label>
+                            <input type="date" name="mentorship-date" id="mentorship-date">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentorship-timebegin">Das</label>
+                            <input type="time" name="mentorship-timebegin" id="mentorship-timebegin">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentorship-timeend">Até</label>
+                            <input type="time" name="mentorship-timeend" id="mentorship-timeend">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <footer>
+            <input form="mentorship-form" type="submit" value="SALVAR" class="button">
+        </footer>
+    </div>
+</body>
+
+</html>
